@@ -1,0 +1,12 @@
+.feed {
+  max-width: 600px;
+  margin: 4rem 0vw 4rem 15vw;
+
+  @media (max-width: 1050px) {
+    margin: 4rem auto;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin: 4rem 0;
+  }
+}

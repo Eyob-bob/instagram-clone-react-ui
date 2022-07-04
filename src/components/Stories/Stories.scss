@@ -1,0 +1,52 @@
+.stories {
+  width: 70%;
+  margin: 1rem auto;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+
+  &__card {
+    width: 100%;
+    height: 8rem;
+
+    padding: 0 1rem;
+
+    box-shadow: none;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+
+    .avatar {
+      display: flex;
+      gap: 0.5rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &__border {
+        display: grid;
+        place-content: center;
+
+        width: 60px;
+        height: 60px;
+        border: double 2px transparent;
+        border-radius: 999px;
+        background-image: linear-gradient(white, white),
+          radial-gradient(circle at top left, purple, red);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+      }
+
+      &__name {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 90%;
+  }
+}
